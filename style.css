@@ -1,0 +1,15 @@
+h1, input, label {
+	display: block;
+	text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+table {
+	margin: 20px auto;
+	text-align: center;
+}
+input[type="text"] {
+	border: solid #999999 1px;
+	display: initial;
+}
