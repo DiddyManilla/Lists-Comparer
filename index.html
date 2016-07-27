@@ -7,17 +7,31 @@
 </head>
 <body>
 	<h1>Lists Comparer</h1>
-	<table align="center">
-		<tr>
-			<td><p>List 1</p></td>
-			<td><p>List 2</p></td>
-		</tr>
-		<tr>
-			<td><input type="text" id="list1"></td>
-			<td><input type="text" id="list2"></td>
-		</tr>
-	</table>
-	<input type="button" value="Get comparison!">
-	<p>
+	<p>Please enter two lists of values separated by commas(e.g. 1, 95, dog, 3).</p>
+	<div class="double">
+		<div class="left">
+			<label for="List1">List 1</label>
+			<input type="text" id="List1">
+		</div>
+		<div class="right">
+			<label for="List2">List 2</label>
+			<input type="text" id="List2">
+		</div>
+	</div>
+	<input type="button" id="get-results" value="Get comparison!">
+	<div id="results">
+		<div class="double">
+			<div>
+				<p>Unique to list 1</p>
+				<p id="unique1"> </p>
+			</div>
+			<div>
+				<p>Unique to list 2</p>
+				<p id="unique2"> </p>
+			</div>
+		</div>
+		<p>Common between both</p>
+		<p id="common"></p>
+	</div>
 </body>
 </html>
